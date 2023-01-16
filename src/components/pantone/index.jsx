@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 //components
 import ColorBox from "../colorBox/index";
 import TextBox from "../textBox/index";
@@ -13,6 +13,8 @@ const Pantone = () => {
 
   const [showExportedPallettes, setShowExportedPallettes] = useState(false);
   const [exportedPallettes, setExportedPallettes] = useState([]);
+
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const addNewRandomColor = () => {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -29,8 +31,9 @@ const Pantone = () => {
     });
 
     if (alreadyExist) {
-      console.log("EXISTE");
+      setErrorMessage(true);
     } else {
+      setErrorMessage(false);
       setPallette((prevState) => [...prevState, newPalette]);
     }
   };
@@ -85,7 +88,15 @@ const Pantone = () => {
       <div className="firstContainer">
         <div className="pantone">
           <ColorBox color={randomColor}></ColorBox>
+          <div className="error">
+            {errorMessage ? (
+              <span>This color is already in the Pallete</span>
+            ) : (
+              ""
+            )}
+          </div>
           <TextBox color={randomColor}></TextBox>
+
           <div className="buttonBox">
             {firstButtonTags}
             {exportButtonPallette}
