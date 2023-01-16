@@ -1,0 +1,29 @@
+.cardColor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 60px;
+  background-color: white;
+  margin: 20px 0px 20px 0px;
+  background: #fafafa;
+  box-shadow: 5px 5px 10px #e6e6e6, -5px -5px 10px #ffffff;
+}
+.color__box {
+  width: 150px;
+  height: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.button_color {
+  width: 60px;
+  height: 60px;
+  background-color: #de8585;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}

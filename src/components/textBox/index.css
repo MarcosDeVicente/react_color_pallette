@@ -1,0 +1,10 @@
+.textBox {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.textBox__firstSpan {
+  font-weight: 700;
+  font-size: 1.5em;
+}
