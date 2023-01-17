@@ -27,3 +27,6 @@ tenemos dos botones RANDOM y Add to pallette:
 En la lista que aparece podremos eliminar los colores seleccionados y una vez tengamos 4 colores
 en la lista podremos crear la paleta
 
+
+<img width="1380" alt="Captura de pantalla 2023-01-17 a las 8 40 24" src="https://user-images.githubusercontent.com/52428440/212837880-d6811c98-5528-4d7e-b372-96608be3b779.png">
+
